@@ -1,0 +1,5 @@
+This project applies scalable machine learning techniques to solve diverse, real-world data analysis problems using PySpark. It combines anomaly detection, forecasting, classification, and recommendation systems — reflecting the kind of end-to-end challenges faced by modern data analysts.
+
+Through four tasks, the project analyzes NASA server logs for host activity anomalies, predicts insurance claim patterns using Poisson and logistic regression, evaluates multiple classifiers like Random Forest and Gradient Boosting, and builds a collaborative filtering-based recommender system similar to Netflix. It also applies clustering to uncover audience segments and trends in genre preferences.
+
+What makes this project stand out is not just the breadth of ML techniques used, but the strong focus on interpretability, business insights, and scalable processing. From identifying overactive hosts in Germany to optimizing ALS parameters for personalized movie recommendations, this work connects machine learning with meaningful, real-world outcomes.
