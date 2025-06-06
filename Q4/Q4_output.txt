@@ -1,0 +1,274 @@
+24/05/03 10:43:12 INFO SparkContext: Running Spark version 3.5.0
+24/05/03 10:43:12 INFO SparkContext: OS info Linux, 3.10.0-1160.105.1.el7.x86_64, amd64
+24/05/03 10:43:12 INFO SparkContext: Java version 17.0.4
+24/05/03 10:43:13 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/05/03 10:43:13 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone/kubernetes and LOCAL_DIRS in YARN).
+24/05/03 10:43:13 INFO ResourceUtils: ==============================================================
+24/05/03 10:43:13 INFO ResourceUtils: No custom resources configured for spark.driver.
+24/05/03 10:43:13 INFO ResourceUtils: ==============================================================
+24/05/03 10:43:13 INFO SparkContext: Submitted application: Movie Recommendation and Cluster Analysis
+24/05/03 10:43:13 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+24/05/03 10:43:13 INFO ResourceProfile: Limiting resource is cpu
+24/05/03 10:43:13 INFO ResourceProfileManager: Added ResourceProfile id: 0
+24/05/03 10:43:13 INFO SecurityManager: Changing view acls to: acp23pks
+24/05/03 10:43:13 INFO SecurityManager: Changing modify acls to: acp23pks
+24/05/03 10:43:13 INFO SecurityManager: Changing view acls groups to: 
+24/05/03 10:43:13 INFO SecurityManager: Changing modify acls groups to: 
+24/05/03 10:43:13 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: acp23pks; groups with view permissions: EMPTY; users with modify permissions: acp23pks; groups with modify permissions: EMPTY
+24/05/03 10:43:14 INFO Utils: Successfully started service 'sparkDriver' on port 39842.
+24/05/03 10:43:14 INFO SparkEnv: Registering MapOutputTracker
+24/05/03 10:43:14 INFO SparkEnv: Registering BlockManagerMaster
+24/05/03 10:43:14 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+24/05/03 10:43:14 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+24/05/03 10:43:14 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+24/05/03 10:43:15 INFO DiskBlockManager: Created local directory at /tmp/job.2557700/blockmgr-58331185-9cab-422b-930e-d51f9164e56d
+24/05/03 10:43:15 INFO MemoryStore: MemoryStore started with capacity 5.6 GiB
+24/05/03 10:43:15 INFO SparkEnv: Registering OutputCommitCoordinator
+24/05/03 10:43:15 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+24/05/03 10:43:15 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+24/05/03 10:43:15 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+24/05/03 10:43:15 INFO Utils: Successfully started service 'SparkUI' on port 4042.
+24/05/03 10:43:15 INFO Executor: Starting executor ID driver on host node141.pri.stanage.alces.network
+24/05/03 10:43:15 INFO Executor: OS info Linux, 3.10.0-1160.105.1.el7.x86_64, amd64
+24/05/03 10:43:15 INFO Executor: Java version 17.0.4
+24/05/03 10:43:15 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+24/05/03 10:43:15 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@4bd07146 for default.
+24/05/03 10:43:15 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 37343.
+24/05/03 10:43:15 INFO NettyBlockTransferService: Server created on node141.pri.stanage.alces.network:37343
+24/05/03 10:43:15 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+24/05/03 10:43:15 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, node141.pri.stanage.alces.network, 37343, None)
+24/05/03 10:43:15 INFO BlockManagerMasterEndpoint: Registering block manager node141.pri.stanage.alces.network:37343 with 5.6 GiB RAM, BlockManagerId(driver, node141.pri.stanage.alces.network, 37343, None)
+24/05/03 10:43:15 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, node141.pri.stanage.alces.network, 37343, None)
+24/05/03 10:43:15 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, node141.pri.stanage.alces.network, 37343, None)
+=======================Task A================
+24/05/03 10:43:41 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:43:41 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:43:41 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:44:58 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:44:58 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:45:01 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:45:01 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
++------+-------+------+---------+---------------------+
+|userId|movieId|rating|timestamp|percent_rank         |
++------+-------+------+---------+---------------------+
+|28507 |1176   |4.0   |789652004|0.0                  |
+|131160|21     |3.0   |789652009|4.999934500858039E-8 |
+|131160|47     |5.0   |789652009|4.999934500858039E-8 |
+|131160|1079   |3.0   |789652009|4.999934500858039E-8 |
+|20821 |32     |5.0   |822873600|1.9999738003432155E-7|
+|53434 |19     |1.0   |822873600|1.9999738003432155E-7|
+|85252 |2      |4.0   |822873600|1.9999738003432155E-7|
+|85252 |7      |5.0   |822873600|1.9999738003432155E-7|
+|85252 |10     |5.0   |822873600|1.9999738003432155E-7|
+|85252 |11     |5.0   |822873600|1.9999738003432155E-7|
+|85252 |12     |1.0   |822873600|1.9999738003432155E-7|
+|85252 |17     |5.0   |822873600|1.9999738003432155E-7|
+|85252 |19     |3.0   |822873600|1.9999738003432155E-7|
+|85252 |21     |4.0   |822873600|1.9999738003432155E-7|
+|85252 |22     |4.0   |822873600|1.9999738003432155E-7|
+|85252 |24     |3.0   |822873600|1.9999738003432155E-7|
+|85252 |32     |4.0   |822873600|1.9999738003432155E-7|
+|85252 |34     |5.0   |822873600|1.9999738003432155E-7|
+|85252 |36     |5.0   |822873600|1.9999738003432155E-7|
+|85252 |45     |3.0   |822873600|1.9999738003432155E-7|
+|85252 |48     |4.0   |822873600|1.9999738003432155E-7|
+|85252 |50     |5.0   |822873600|1.9999738003432155E-7|
+|85252 |60     |4.0   |822873600|1.9999738003432155E-7|
+|85252 |70     |4.0   |822873600|1.9999738003432155E-7|
+|99851 |1      |4.0   |822873600|1.9999738003432155E-7|
+|99851 |10     |4.0   |822873600|1.9999738003432155E-7|
+|99851 |18     |4.0   |822873600|1.9999738003432155E-7|
+|99851 |19     |4.0   |822873600|1.9999738003432155E-7|
+|99851 |21     |5.0   |822873600|1.9999738003432155E-7|
+|99851 |31     |5.0   |822873600|1.9999738003432155E-7|
+|99851 |32     |5.0   |822873600|1.9999738003432155E-7|
+|99851 |39     |5.0   |822873600|1.9999738003432155E-7|
+|99851 |45     |4.0   |822873600|1.9999738003432155E-7|
+|99851 |47     |5.0   |822873600|1.9999738003432155E-7|
+|99851 |50     |5.0   |822873600|1.9999738003432155E-7|
+|99851 |52     |4.0   |822873600|1.9999738003432155E-7|
+|99851 |55     |4.0   |822873600|1.9999738003432155E-7|
+|99851 |58     |5.0   |822873600|1.9999738003432155E-7|
+|108467|10     |3.0   |822873600|1.9999738003432155E-7|
+|108467|11     |4.0   |822873600|1.9999738003432155E-7|
++------+-------+------+---------+---------------------+
+only showing top 40 rows
+
+24/05/03 10:45:10 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:45:10 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:45:10 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:45:11 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:45:11 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:45:11 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:45:11 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:45:11 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:45:11 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:45:11 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:45:11 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:45:11 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:45:11 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:45:11 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:45:11 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:45:11 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:45:11 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:45:11 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:45:11 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:45:11 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:45:15 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:45:15 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:45:45 WARN InstanceBuilder: Failed to load implementation from:dev.ludovic.netlib.blas.JNIBLAS
+24/05/03 10:45:45 WARN InstanceBuilder: Failed to load implementation from:dev.ludovic.netlib.blas.VectorBLAS
+24/05/03 10:45:45 WARN InstanceBuilder: Failed to load implementation from:dev.ludovic.netlib.lapack.JNILAPACK
+24/05/03 10:46:14 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:46:14 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:46:18 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:46:18 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:47:07 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:47:07 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:47:11 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:47:11 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:48:25 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:48:25 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:48:28 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:48:28 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:49:02 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:49:02 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:49:06 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:49:06 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:50:42 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:50:42 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:50:46 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 10:50:46 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+ALS Metrics Table Overview:
++----+---------+-----------+----------+----------+----------+
+|    | Split   | Setting   |     RMSE |      MSE |      MAE |
++====+=========+===========+==========+==========+==========+
+|  0 | 40%     | Setting1  | 0.801164 | 0.641864 | 0.611009 |
++----+---------+-----------+----------+----------+----------+
+|  1 | 60%     | Setting1  | 0.776657 | 0.603197 | 0.590446 |
++----+---------+-----------+----------+----------+----------+
+|  2 | 80%     | Setting1  | 0.795625 | 0.63302  | 0.602151 |
++----+---------+-----------+----------+----------+----------+
+|  3 | 40%     | Setting2  | 0.87469  | 0.765083 | 0.657908 |
++----+---------+-----------+----------+----------+----------+
+|  4 | 60%     | Setting2  | 0.823059 | 0.677426 | 0.613059 |
++----+---------+-----------+----------+----------+----------+
+|  5 | 80%     | Setting2  | 0.868764 | 0.754751 | 0.639004 |
++----+---------+-----------+----------+----------+----------+
+=======================Task B================
+Cluster Sizes Table Overview:
++-------------+-------+-------+-------+
+|             |   40% |   60% |   80% |
++=============+=======+=======+=======+
+| 1st Largest |  4585 |  6368 |  8647 |
++-------------+-------+-------+-------+
+| 2nd Largest |  4334 |  5989 |  8644 |
++-------------+-------+-------+-------+
+| 3rd Largest |  4281 |  5430 |  6602 |
++-------------+-------+-------+-------+
+| 4th Largest |  3965 |  4684 |  6091 |
++-------------+-------+-------+-------+
+| 5th Largest |  3922 |  4583 |  5986 |
++-------------+-------+-------+-------+
+24/05/03 11:05:38 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:05:38 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:05:39 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:05:39 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:05:41 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:05:41 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+Top ten most popular genres for each split
+        Split      Genre  Count
+0   40% Split      Drama   2363
+1   40% Split     Comedy   1677
+2   40% Split    Romance    836
+3   40% Split   Thriller    807
+4   40% Split     Action    659
+5   40% Split      Crime    509
+6   40% Split  Adventure    489
+7   40% Split     Horror    403
+8   40% Split     Sci-Fi    365
+9   40% Split   Children    285
+10  60% Split      Drama   3383
+11  60% Split     Comedy   2314
+12  60% Split    Romance   1218
+13  60% Split   Thriller   1130
+14  60% Split     Action    891
+15  60% Split      Crime    744
+16  60% Split  Adventure    685
+17  60% Split     Sci-Fi    460
+18  60% Split     Horror    452
+19  60% Split   Children    375
+20  80% Split      Drama   5206
+21  80% Split     Comedy   3452
+22  80% Split    Romance   1758
+23  80% Split   Thriller   1664
+24  80% Split     Action   1366
+25  80% Split      Crime   1173
+26  80% Split  Adventure   1010
+27  80% Split     Horror    880
+28  80% Split     Sci-Fi    736
+29  80% Split    Fantasy    564
+Table for Top ten most popular genres for each split
++----+-----------+-----------+---------+
+|    | Split     | Genre     |   Count |
++====+===========+===========+=========+
+|  0 | 40% Split | Drama     |    2363 |
++----+-----------+-----------+---------+
+|  1 | 40% Split | Comedy    |    1677 |
++----+-----------+-----------+---------+
+|  2 | 40% Split | Romance   |     836 |
++----+-----------+-----------+---------+
+|  3 | 40% Split | Thriller  |     807 |
++----+-----------+-----------+---------+
+|  4 | 40% Split | Action    |     659 |
++----+-----------+-----------+---------+
+|  5 | 40% Split | Crime     |     509 |
++----+-----------+-----------+---------+
+|  6 | 40% Split | Adventure |     489 |
++----+-----------+-----------+---------+
+|  7 | 40% Split | Horror    |     403 |
++----+-----------+-----------+---------+
+|  8 | 40% Split | Sci-Fi    |     365 |
++----+-----------+-----------+---------+
+|  9 | 40% Split | Children  |     285 |
++----+-----------+-----------+---------+
+| 10 | 60% Split | Drama     |    3383 |
++----+-----------+-----------+---------+
+| 11 | 60% Split | Comedy    |    2314 |
++----+-----------+-----------+---------+
+| 12 | 60% Split | Romance   |    1218 |
++----+-----------+-----------+---------+
+| 13 | 60% Split | Thriller  |    1130 |
++----+-----------+-----------+---------+
+| 14 | 60% Split | Action    |     891 |
++----+-----------+-----------+---------+
+| 15 | 60% Split | Crime     |     744 |
++----+-----------+-----------+---------+
+| 16 | 60% Split | Adventure |     685 |
++----+-----------+-----------+---------+
+| 17 | 60% Split | Sci-Fi    |     460 |
++----+-----------+-----------+---------+
+| 18 | 60% Split | Horror    |     452 |
++----+-----------+-----------+---------+
+| 19 | 60% Split | Children  |     375 |
++----+-----------+-----------+---------+
+| 20 | 80% Split | Drama     |    5206 |
++----+-----------+-----------+---------+
+| 21 | 80% Split | Comedy    |    3452 |
++----+-----------+-----------+---------+
+| 22 | 80% Split | Romance   |    1758 |
++----+-----------+-----------+---------+
+| 23 | 80% Split | Thriller  |    1664 |
++----+-----------+-----------+---------+
+| 24 | 80% Split | Action    |    1366 |
++----+-----------+-----------+---------+
+| 25 | 80% Split | Crime     |    1173 |
++----+-----------+-----------+---------+
+| 26 | 80% Split | Adventure |    1010 |
++----+-----------+-----------+---------+
+| 27 | 80% Split | Horror    |     880 |
++----+-----------+-----------+---------+
+| 28 | 80% Split | Sci-Fi    |     736 |
++----+-----------+-----------+---------+
+| 29 | 80% Split | Fantasy   |     564 |
++----+-----------+-----------+---------+

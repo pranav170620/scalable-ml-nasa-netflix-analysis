@@ -1,0 +1,118 @@
+24/05/02 21:39:11 INFO SparkContext: Running Spark version 3.5.0
+24/05/02 21:39:11 INFO SparkContext: OS info Linux, 3.10.0-1160.105.1.el7.x86_64, amd64
+24/05/02 21:39:11 INFO SparkContext: Java version 17.0.4
+24/05/02 21:39:11 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/05/02 21:39:11 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone/kubernetes and LOCAL_DIRS in YARN).
+24/05/02 21:39:11 INFO ResourceUtils: ==============================================================
+24/05/02 21:39:11 INFO ResourceUtils: No custom resources configured for spark.driver.
+24/05/02 21:39:11 INFO ResourceUtils: ==============================================================
+24/05/02 21:39:11 INFO SparkContext: Submitted application: Q2
+24/05/02 21:39:12 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+24/05/02 21:39:12 INFO ResourceProfile: Limiting resource is cpu
+24/05/02 21:39:12 INFO ResourceProfileManager: Added ResourceProfile id: 0
+24/05/02 21:39:12 INFO SecurityManager: Changing view acls to: acp23pks
+24/05/02 21:39:12 INFO SecurityManager: Changing modify acls to: acp23pks
+24/05/02 21:39:12 INFO SecurityManager: Changing view acls groups to: 
+24/05/02 21:39:12 INFO SecurityManager: Changing modify acls groups to: 
+24/05/02 21:39:12 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: acp23pks; groups with view permissions: EMPTY; users with modify permissions: acp23pks; groups with modify permissions: EMPTY
+24/05/02 21:39:12 INFO Utils: Successfully started service 'sparkDriver' on port 40967.
+24/05/02 21:39:13 INFO SparkEnv: Registering MapOutputTracker
+24/05/02 21:39:13 INFO SparkEnv: Registering BlockManagerMaster
+24/05/02 21:39:13 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+24/05/02 21:39:13 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+24/05/02 21:39:13 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+24/05/02 21:39:13 INFO DiskBlockManager: Created local directory at /mnt/parscratch/users/acp23pks/blockmgr-713a2008-61f0-4a60-b0d6-7ca99f7bf0bd
+24/05/02 21:39:13 INFO MemoryStore: MemoryStore started with capacity 413.9 MiB
+24/05/02 21:39:13 INFO SparkEnv: Registering OutputCommitCoordinator
+24/05/02 21:39:13 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+24/05/02 21:39:13 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+24/05/02 21:39:14 INFO Executor: Starting executor ID driver on host node072.pri.stanage.alces.network
+24/05/02 21:39:14 INFO Executor: OS info Linux, 3.10.0-1160.105.1.el7.x86_64, amd64
+24/05/02 21:39:14 INFO Executor: Java version 17.0.4
+24/05/02 21:39:14 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+24/05/02 21:39:14 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@393f5031 for default.
+24/05/02 21:39:14 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 35836.
+24/05/02 21:39:14 INFO NettyBlockTransferService: Server created on node072.pri.stanage.alces.network:35836
+24/05/02 21:39:14 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+24/05/02 21:39:14 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, node072.pri.stanage.alces.network, 35836, None)
+24/05/02 21:39:14 INFO BlockManagerMasterEndpoint: Registering block manager node072.pri.stanage.alces.network:35836 with 413.9 MiB RAM, BlockManagerId(driver, node072.pri.stanage.alces.network, 35836, None)
+24/05/02 21:39:14 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, node072.pri.stanage.alces.network, 35836, None)
+24/05/02 21:39:14 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, node072.pri.stanage.alces.network, 35836, None)
++-----+-------+--------+----+--------+------+-------+----------+--------+-------+-------+------+
+|IDpol|ClaimNb|Exposure|Area|VehPower|VehAge|DrivAge|BonusMalus|VehBrand|VehGas |Density|Region|
++-----+-------+--------+----+--------+------+-------+----------+--------+-------+-------+------+
+|1.0  |1      |0.1     |D   |5       |0     |55     |50        |B12     |Regular|1217   |R82   |
+|3.0  |1      |0.77    |D   |5       |0     |55     |50        |B12     |Regular|1217   |R82   |
+|5.0  |1      |0.75    |B   |6       |2     |52     |50        |B12     |Diesel |54     |R22   |
+|10.0 |1      |0.09    |B   |7       |0     |46     |50        |B12     |Diesel |76     |R72   |
+|11.0 |1      |0.84    |B   |7       |0     |46     |50        |B12     |Diesel |76     |R72   |
+|13.0 |1      |0.52    |E   |6       |2     |38     |50        |B12     |Regular|3003   |R31   |
+|15.0 |1      |0.45    |E   |6       |2     |38     |50        |B12     |Regular|3003   |R31   |
+|17.0 |1      |0.27    |C   |7       |0     |33     |68        |B12     |Diesel |137    |R91   |
+|18.0 |1      |0.71    |C   |7       |0     |33     |68        |B12     |Diesel |137    |R91   |
+|21.0 |1      |0.15    |B   |7       |0     |41     |50        |B12     |Diesel |60     |R52   |
+|25.0 |1      |0.75    |B   |7       |0     |41     |50        |B12     |Diesel |60     |R52   |
+|27.0 |1      |0.87    |C   |7       |0     |56     |50        |B12     |Diesel |173    |R93   |
+|30.0 |1      |0.81    |D   |4       |1     |27     |90        |B12     |Regular|695    |R72   |
+|32.0 |1      |0.05    |D   |4       |0     |27     |90        |B12     |Regular|695    |R72   |
+|35.0 |1      |0.76    |E   |4       |9     |23     |100       |B6      |Regular|7887   |R31   |
+|36.0 |1      |0.34    |F   |9       |0     |44     |76        |B12     |Regular|27000  |R11   |
+|38.0 |1      |0.1     |A   |6       |2     |32     |56        |B12     |Diesel |23     |R24   |
+|42.0 |1      |0.77    |A   |6       |2     |32     |56        |B12     |Diesel |23     |R24   |
+|44.0 |1      |0.74    |A   |6       |2     |55     |50        |B12     |Regular|37     |R94   |
+|45.0 |1      |0.1     |A   |6       |2     |55     |50        |B12     |Regular|37     |R94   |
+|47.0 |1      |0.03    |A   |6       |2     |55     |50        |B12     |Regular|37     |R94   |
+|49.0 |2      |0.81    |E   |7       |0     |73     |50        |B12     |Regular|3317   |R93   |
+|50.0 |1      |0.06    |E   |7       |0     |73     |50        |B12     |Regular|3317   |R93   |
+|52.0 |1      |0.1     |B   |6       |8     |27     |76        |B3      |Diesel |85     |R93   |
+|53.0 |1      |0.55    |D   |5       |0     |33     |100       |B12     |Regular|1746   |R11   |
+|54.0 |1      |0.19    |D   |5       |0     |33     |100       |B12     |Regular|1746   |R11   |
+|55.0 |1      |0.01    |D   |5       |0     |33     |100       |B12     |Regular|1746   |R11   |
+|58.0 |1      |0.03    |C   |5       |0     |59     |50        |B12     |Regular|455    |R91   |
+|59.0 |1      |0.79    |C   |5       |0     |59     |50        |B12     |Regular|455    |R91   |
+|60.0 |2      |0.04    |C   |5       |0     |59     |50        |B12     |Regular|455    |R91   |
+|62.0 |1      |0.87    |D   |5       |0     |54     |50        |B12     |Regular|781    |R31   |
+|65.0 |1      |0.87    |D   |15      |0     |44     |71        |B12     |Diesel |1110   |R94   |
+|67.0 |1      |0.8     |D   |5       |0     |69     |52        |B12     |Regular|1376   |R11   |
+|68.0 |1      |0.07    |D   |5       |0     |69     |52        |B12     |Regular|1376   |R11   |
+|72.0 |1      |0.39    |D   |4       |0     |23     |85        |B12     |Regular|533    |R93   |
+|73.0 |1      |0.47    |D   |4       |0     |23     |85        |B12     |Regular|533    |R93   |
+|77.0 |1      |0.69    |A   |6       |0     |60     |51        |B12     |Diesel |12     |R83   |
+|78.0 |1      |0.16    |A   |6       |0     |60     |51        |B12     |Diesel |12     |R83   |
+|80.0 |1      |0.12    |E   |9       |0     |43     |50        |B12     |Regular|7752   |R11   |
+|82.0 |1      |0.76    |E   |9       |0     |43     |50        |B12     |Regular|7752   |R11   |
++-----+-------+--------+----+--------+------+-------+----------+--------+-------+-------+------+
+only showing top 40 rows
+
+24/05/02 21:39:43 WARN InstanceBuilder: Failed to load implementation from:dev.ludovic.netlib.blas.JNIBLAS
+24/05/02 21:39:43 WARN InstanceBuilder: Failed to load implementation from:dev.ludovic.netlib.blas.VectorBLAS
+24/05/02 21:39:44 WARN InstanceBuilder: Failed to load implementation from:dev.ludovic.netlib.lapack.JNILAPACK
+24/05/02 21:59:45 WARN BlockManager: Asked to remove block broadcast_8847_piece0, which does not exist
+24/05/02 22:05:07 WARN BlockManager: Asked to remove block broadcast_13119, which does not exist
+24/05/02 22:05:07 WARN BlockManager: Asked to remove block broadcast_13119_piece0, which does not exist
+24/05/02 22:05:24 WARN BlockManager: Asked to remove block broadcast_13308_piece0, which does not exist
+24/05/02 22:05:32 WARN BlockManager: Asked to remove block broadcast_13455, which does not exist
+24/05/02 22:07:53 WARN BlockManager: Asked to remove block broadcast_15290_piece0, which does not exist
+24/05/02 22:10:58 WARN BlockManager: Asked to remove block broadcast_18016, which does not exist
+24/05/02 22:10:58 WARN BlockManager: Asked to remove block broadcast_18016_piece0, which does not exist
+24/05/02 22:13:09 WARN BlockManager: Asked to remove block broadcast_20368, which does not exist
+24/05/02 22:16:26 WARN BlockManager: Asked to remove block broadcast_23904, which does not exist
+24/05/02 22:16:57 WARN BlockManager: Asked to remove block broadcast_24430, which does not exist
+24/05/02 22:17:38 WARN BlockManager: Asked to remove block broadcast_25180_piece0, which does not exist
+24/05/02 22:17:47 WARN BlockManager: Asked to remove block broadcast_25340_piece0, which does not exist
+24/05/02 22:19:13 WARN BlockManager: Asked to remove block broadcast_26855, which does not exist
+24/05/02 22:21:09 WARN BlockManager: Asked to remove block broadcast_28896_piece0, which does not exist
+24/05/02 22:21:09 WARN BlockManager: Asked to remove block broadcast_28896, which does not exist
+24/05/02 22:21:14 WARN BlockManager: Asked to remove block broadcast_28976, which does not exist
+24/05/02 22:22:15 WARN BlockManager: Asked to remove block broadcast_30042_piece0, which does not exist
+24/05/02 22:25:03 WARN BlockManager: Asked to remove block broadcast_33054_piece0, which does not exist
+24/05/02 22:26:04 WARN BlockManager: Asked to remove block rdd_110811_0, which does not exist
+24/05/02 22:26:53 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+Logistic Regression Accuracy (L1):  0.8900874824295332
+Logistic Regression Accuracy (L2):  0.8900874824295332
+Poisson RMSE:  0.35415676683869435
+Logistic Regression AUC (L1):  0.6274747638691888
+Logistic Regression AUC (L2):  0.6282882382517361
+Poisson Model Coefficients:  [-0.03628192878846597,0.02828311733139508,0.07421372254581649,-0.2563918725853634,0.0054955924317435165,0.10777503386726624,-0.06215817511915619,0.1118845542987508,0.11627661474433998,-0.02870524910174056,0.0494491947427867,0.08594489464686095,0.06856431483341396,-0.09233180082024525,-0.0876876185758788,0.058572289963130846,0.1487573909393707,0.12796662402298217,0.013575555845022498,-0.045056250876449,0.32869711751173225,-0.023830939708027448,0.09389739347729677,-0.08754294617707259,-0.17790636160465934,-0.03595533817495027,-0.15014706590095797,-0.05166691673499962,-0.11549641908682422,0.04103906308807313,-0.21569402397540569,-0.11332746447204942,-0.2402272441229453,0.045938746793003166,-0.0720395749244807,0.30527132591252737,0.09095986095721181,0.9684221061581735,0.012521285079916351,-0.023039905579716417,0.007717452010103379,0.018868597371091915,-4.2031481540079465e-06]
+Logistic Regression Coefficients (L1):  (43,[3,6,16,20,24,35,37,39,40,41],[-0.1358448969756313,-0.04637381633392563,0.005570317402758971,0.1981608202926317,-0.043166054655165854,0.3609538388220276,0.9129264155830042,-0.01226011915894046,0.0017765954804082502,0.013452227295044047])
+Logistic Regression Coefficients (L2):  [-0.0554595613354867,-0.009663758814880418,0.06334201480375361,-0.31943467361794053,-0.032196424008271066,0.1112546927563856,-0.06369542261989232,0.10904610022764377,0.14488442324137263,0.024336301950245384,0.09207656012208712,0.18246774211421718,0.0934949555445522,-0.06370130891244741,-0.07397614327400868,0.049348410947085405,0.12297547154671339,0.0659131605895466,-0.04229662464166082,-0.13312354881762745,0.3082085046375766,-0.10225088932504944,-0.018110561981605714,-0.26588279019451194,-0.36025282658339464,-0.11290057328830237,-0.318305763399956,-0.18636732792368083,-0.19460415102363476,0.0645271758172711,-0.46942433490188296,-0.22426071736990782,-0.6727798771338824,-0.02658942666040341,-0.3898591450462567,0.7678834030283765,0.07794064124423677,1.00255592193221,0.00993318508077163,-0.02321618577902623,0.006236928291606973,0.01762502876027256,-4.573989832039292e-06]

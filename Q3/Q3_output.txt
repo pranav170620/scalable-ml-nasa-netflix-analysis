@@ -1,0 +1,66 @@
+24/04/30 13:41:25 INFO SparkContext: Running Spark version 3.5.0
+24/04/30 13:41:25 INFO SparkContext: OS info Linux, 3.10.0-1160.105.1.el7.x86_64, amd64
+24/04/30 13:41:25 INFO SparkContext: Java version 17.0.4
+24/04/30 13:41:26 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/04/30 13:41:26 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone/kubernetes and LOCAL_DIRS in YARN).
+24/04/30 13:41:26 INFO ResourceUtils: ==============================================================
+24/04/30 13:41:26 INFO ResourceUtils: No custom resources configured for spark.driver.
+24/04/30 13:41:26 INFO ResourceUtils: ==============================================================
+24/04/30 13:41:26 INFO SparkContext: Submitted application: Q3
+24/04/30 13:41:26 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+24/04/30 13:41:26 INFO ResourceProfile: Limiting resource is cpu
+24/04/30 13:41:26 INFO ResourceProfileManager: Added ResourceProfile id: 0
+24/04/30 13:41:26 INFO SecurityManager: Changing view acls to: acp23pks
+24/04/30 13:41:26 INFO SecurityManager: Changing modify acls to: acp23pks
+24/04/30 13:41:26 INFO SecurityManager: Changing view acls groups to: 
+24/04/30 13:41:26 INFO SecurityManager: Changing modify acls groups to: 
+24/04/30 13:41:26 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: acp23pks; groups with view permissions: EMPTY; users with modify permissions: acp23pks; groups with modify permissions: EMPTY
+24/04/30 13:41:27 INFO Utils: Successfully started service 'sparkDriver' on port 42266.
+24/04/30 13:41:27 INFO SparkEnv: Registering MapOutputTracker
+24/04/30 13:41:27 INFO SparkEnv: Registering BlockManagerMaster
+24/04/30 13:41:28 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+24/04/30 13:41:28 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+24/04/30 13:41:28 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+24/04/30 13:41:28 INFO DiskBlockManager: Created local directory at /tmp/job.2526946/blockmgr-d6e90d9d-8baf-4c14-9ea0-3b30a1d1de2d
+24/04/30 13:41:28 INFO MemoryStore: MemoryStore started with capacity 11.4 GiB
+24/04/30 13:41:28 INFO SparkEnv: Registering OutputCommitCoordinator
+24/04/30 13:41:28 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+24/04/30 13:41:28 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+24/04/30 13:41:28 INFO Executor: Starting executor ID driver on host node025.pri.stanage.alces.network
+24/04/30 13:41:28 INFO Executor: OS info Linux, 3.10.0-1160.105.1.el7.x86_64, amd64
+24/04/30 13:41:28 INFO Executor: Java version 17.0.4
+24/04/30 13:41:28 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+24/04/30 13:41:28 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@5405fa5b for default.
+24/04/30 13:41:28 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 41571.
+24/04/30 13:41:28 INFO NettyBlockTransferService: Server created on node025.pri.stanage.alces.network:41571
+24/04/30 13:41:28 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+24/04/30 13:41:28 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, node025.pri.stanage.alces.network, 41571, None)
+24/04/30 13:41:28 INFO BlockManagerMasterEndpoint: Registering block manager node025.pri.stanage.alces.network:41571 with 11.4 GiB RAM, BlockManagerId(driver, node025.pri.stanage.alces.network, 41571, None)
+24/04/30 13:41:28 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, node025.pri.stanage.alces.network, 41571, None)
+24/04/30 13:41:28 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, node025.pri.stanage.alces.network, 41571, None)
+===================Task A========================
+===================Random Forest=========================
+RF accuracy = 0.705463 
+RF area under the curve = 0.69357 
+===================Gradient Boosting=========================
+GBT accuracy = 0.722095 
+GBT area under the curve = 0.714565 
+===================Neural Network=========================
+Neural Network accuracy = 0.682344 
+Neural Network area under the curve = 0.671344 
+===========================Task B============================
+===================Best parameter for RF========================
+[{'maxDepth': 10}, {'maxBins': 50}, {'numTrees': 10}]
+=====================Best parameter for GBT======================
+[{'maxDepth': 5}, {'maxIter': 30}, {'stepSize': 0.2}]
+===================Best parameter for NN========================
+[{'maxIter': 150}, {'blockSize': 256}, {'layers': [28, 6, 5, 2]}]
+Random Forest accuracy = 0.697879 
+Random Forest area under the curve = 0.690826 
+===========================================
+Gradient Boosted Trees accuracy = 0.718963 
+Gradient Boosted Trees area under the curve = 0.71458 
+===========================================
+Neural Network accuracy = 0.675011 
+Neural Network area under the curve = 0.668837 
+===========================================

@@ -1,0 +1,160 @@
+24/05/02 21:49:09 INFO SparkContext: Running Spark version 3.5.0
+24/05/02 21:49:09 INFO SparkContext: OS info Linux, 3.10.0-1160.105.1.el7.x86_64, amd64
+24/05/02 21:49:09 INFO SparkContext: Java version 17.0.4
+24/05/02 21:49:09 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/05/02 21:49:09 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone/kubernetes and LOCAL_DIRS in YARN).
+24/05/02 21:49:09 INFO ResourceUtils: ==============================================================
+24/05/02 21:49:09 INFO ResourceUtils: No custom resources configured for spark.driver.
+24/05/02 21:49:09 INFO ResourceUtils: ==============================================================
+24/05/02 21:49:09 INFO SparkContext: Submitted application: Q1
+24/05/02 21:49:09 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+24/05/02 21:49:09 INFO ResourceProfile: Limiting resource is cpu
+24/05/02 21:49:09 INFO ResourceProfileManager: Added ResourceProfile id: 0
+24/05/02 21:49:09 INFO SecurityManager: Changing view acls to: acp23pks
+24/05/02 21:49:09 INFO SecurityManager: Changing modify acls to: acp23pks
+24/05/02 21:49:09 INFO SecurityManager: Changing view acls groups to: 
+24/05/02 21:49:09 INFO SecurityManager: Changing modify acls groups to: 
+24/05/02 21:49:09 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: acp23pks; groups with view permissions: EMPTY; users with modify permissions: acp23pks; groups with modify permissions: EMPTY
+24/05/02 21:49:09 INFO Utils: Successfully started service 'sparkDriver' on port 37527.
+24/05/02 21:49:10 INFO SparkEnv: Registering MapOutputTracker
+24/05/02 21:49:10 INFO SparkEnv: Registering BlockManagerMaster
+24/05/02 21:49:10 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+24/05/02 21:49:10 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+24/05/02 21:49:10 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+24/05/02 21:49:10 INFO DiskBlockManager: Created local directory at /mnt/parscratch/users/acp23pks/blockmgr-e2b29216-59d6-4297-9e03-e77f4cd9044b
+24/05/02 21:49:10 INFO MemoryStore: MemoryStore started with capacity 413.9 MiB
+24/05/02 21:49:10 INFO SparkEnv: Registering OutputCommitCoordinator
+24/05/02 21:49:10 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+24/05/02 21:49:10 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+24/05/02 21:49:10 INFO Utils: Successfully started service 'SparkUI' on port 4041.
+24/05/02 21:49:10 INFO Executor: Starting executor ID driver on host node145.pri.stanage.alces.network
+24/05/02 21:49:10 INFO Executor: OS info Linux, 3.10.0-1160.105.1.el7.x86_64, amd64
+24/05/02 21:49:10 INFO Executor: Java version 17.0.4
+24/05/02 21:49:10 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+24/05/02 21:49:10 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@3e85c52c for default.
+24/05/02 21:49:10 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 46374.
+24/05/02 21:49:10 INFO NettyBlockTransferService: Server created on node145.pri.stanage.alces.network:46374
+24/05/02 21:49:10 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+24/05/02 21:49:10 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, node145.pri.stanage.alces.network, 46374, None)
+24/05/02 21:49:10 INFO BlockManagerMasterEndpoint: Registering block manager node145.pri.stanage.alces.network:46374 with 413.9 MiB RAM, BlockManagerId(driver, node145.pri.stanage.alces.network, 46374, None)
+24/05/02 21:49:10 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, node145.pri.stanage.alces.network, 46374, None)
+24/05/02 21:49:10 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, node145.pri.stanage.alces.network, 46374, None)
+Total lines in the original file: 1891715
+/users/acp23pks/.conda/envs/myspark/lib/python3.11/site-packages/pyspark/python/lib/pyspark.zip/pyspark/sql/column.py:460: FutureWarning: A column as 'key' in getItem is deprecated as of Spark 3.0, and will not be supported in the future release. Use `column[key]` or `column.key` syntax instead.
++-------------------------+--------------------------+--------------------------------------------------------------+---------------+------------------+
+|host                     |timestamp                 |request                                                       |HTTP reply code|bytes in the reply|
++-------------------------+--------------------------+--------------------------------------------------------------+---------------+------------------+
+|199.72.81.55             |01/Jul/1995:00:00:01 -0400|GET /history/apollo/ HTTP/1.0                                 |200            |6245              |
+|unicomp6.unicomp.net     |01/Jul/1995:00:00:06 -0400|GET /shuttle/countdown/ HTTP/1.0                              |200            |3985              |
+|199.120.110.21           |01/Jul/1995:00:00:09 -0400|GET /shuttle/missions/sts-73/mission-sts-73.html HTTP/1.0     |200            |4085              |
+|burger.letters.com       |01/Jul/1995:00:00:11 -0400|GET /shuttle/countdown/liftoff.html HTTP/1.0                  |304            |0                 |
+|199.120.110.21           |01/Jul/1995:00:00:11 -0400|GET /shuttle/missions/sts-73/sts-73-patch-small.gif HTTP/1.0  |200            |4179              |
+|burger.letters.com       |01/Jul/1995:00:00:12 -0400|GET /images/NASA-logosmall.gif HTTP/1.0                       |304            |0                 |
+|burger.letters.com       |01/Jul/1995:00:00:12 -0400|GET /shuttle/countdown/video/livevideo.gif HTTP/1.0           |200            |0                 |
+|205.212.115.106          |01/Jul/1995:00:00:12 -0400|GET /shuttle/countdown/countdown.html HTTP/1.0                |200            |3985              |
+|d104.aa.net              |01/Jul/1995:00:00:13 -0400|GET /shuttle/countdown/ HTTP/1.0                              |200            |3985              |
+|129.94.144.152           |01/Jul/1995:00:00:13 -0400|GET / HTTP/1.0                                                |200            |7074              |
+|unicomp6.unicomp.net     |01/Jul/1995:00:00:14 -0400|GET /shuttle/countdown/count.gif HTTP/1.0                     |200            |40310             |
+|unicomp6.unicomp.net     |01/Jul/1995:00:00:14 -0400|GET /images/NASA-logosmall.gif HTTP/1.0                       |200            |786               |
+|unicomp6.unicomp.net     |01/Jul/1995:00:00:14 -0400|GET /images/KSC-logosmall.gif HTTP/1.0                        |200            |1204              |
+|d104.aa.net              |01/Jul/1995:00:00:15 -0400|GET /shuttle/countdown/count.gif HTTP/1.0                     |200            |40310             |
+|d104.aa.net              |01/Jul/1995:00:00:15 -0400|GET /images/NASA-logosmall.gif HTTP/1.0                       |200            |786               |
+|d104.aa.net              |01/Jul/1995:00:00:15 -0400|GET /images/KSC-logosmall.gif HTTP/1.0                        |200            |1204              |
+|129.94.144.152           |01/Jul/1995:00:00:17 -0400|GET /images/ksclogo-medium.gif HTTP/1.0                       |304            |0                 |
+|199.120.110.21           |01/Jul/1995:00:00:17 -0400|GET /images/launch-logo.gif HTTP/1.0                          |200            |1713              |
+|ppptky391.asahi-net.or.jp|01/Jul/1995:00:00:18 -0400|GET /facts/about_ksc.html HTTP/1.0                            |200            |3977              |
+|net-1-141.eden.com       |01/Jul/1995:00:00:19 -0400|GET /shuttle/missions/sts-71/images/KSC-95EC-0916.jpg HTTP/1.0|200            |34029             |
++-------------------------+--------------------------+--------------------------------------------------------------+---------------+------------------+
+only showing top 20 rows
+
++--------------------------------+--------------------------+-----------------------------------------+---------------+------------------+
+|host                            |timestamp                 |request                                  |HTTP reply code|bytes in the reply|
++--------------------------------+--------------------------+-----------------------------------------+---------------+------------------+
+|modem1.castrop-rauxel.netsurf.de|01/Jul/1995:02:32:12 -0400|GET / HTTP/1.0                           |200            |7074              |
+|modem1.castrop-rauxel.netsurf.de|01/Jul/1995:02:32:13 -0400|GET /images/ksclogo-medium.gif HTTP/1.0  |200            |5866              |
+|modem1.castrop-rauxel.netsurf.de|01/Jul/1995:02:32:16 -0400|GET /images/NASA-logosmall.gif HTTP/1.0  |200            |786               |
+|modem1.castrop-rauxel.netsurf.de|01/Jul/1995:02:32:16 -0400|GET /images/MOSAIC-logosmall.gif HTTP/1.0|200            |363               |
+|modem1.castrop-rauxel.netsurf.de|01/Jul/1995:02:32:16 -0400|GET /images/USA-logosmall.gif HTTP/1.0   |200            |234               |
++--------------------------------+--------------------------+-----------------------------------------+---------------+------------------+
+only showing top 5 rows
+
++-------------------------+--------------------------+--------------------------------------------------------------+---------------+------------------+
+|host                     |timestamp                 |request                                                       |HTTP reply code|bytes in the reply|
++-------------------------+--------------------------+--------------------------------------------------------------+---------------+------------------+
+|remote27.compusmart.ab.ca|01/Jul/1995:00:01:14 -0400|GET /shuttle/missions/sts-71/sts-71-patch-small.gif HTTP/1.0  |200            |12054             |
+|remote27.compusmart.ab.ca|01/Jul/1995:00:01:27 -0400|GET /shuttle/countdown/ HTTP/1.0                              |200            |3985              |
+|remote27.compusmart.ab.ca|01/Jul/1995:00:01:53 -0400|GET /cgi-bin/imagemap/countdown?102,174 HTTP/1.0              |302            |110               |
+|remote27.compusmart.ab.ca|01/Jul/1995:00:01:55 -0400|GET /shuttle/missions/sts-71/images/images.html HTTP/1.0      |200            |7634              |
+|remote27.compusmart.ab.ca|01/Jul/1995:00:02:14 -0400|GET /shuttle/missions/sts-71/images/KSC-95EC-0868.gif HTTP/1.0|200            |47122             |
++-------------------------+--------------------------+--------------------------------------------------------------+---------------+------------------+
+only showing top 5 rows
+
++------------------------+--------------------------+------------------------------------------------+---------------+------------------+
+|host                    |timestamp                 |request                                         |HTTP reply code|bytes in the reply|
++------------------------+--------------------------+------------------------------------------------+---------------+------------------+
+|ts900-418.singnet.com.sg|01/Jul/1995:00:50:09 -0400|GET /shuttle/countdown/ HTTP/1.0                |200            |3985              |
+|ts900-418.singnet.com.sg|01/Jul/1995:00:50:13 -0400|GET /shuttle/countdown/count.gif HTTP/1.0       |200            |40310             |
+|ts900-418.singnet.com.sg|01/Jul/1995:00:50:13 -0400|GET /images/NASA-logosmall.gif HTTP/1.0         |200            |786               |
+|ts900-418.singnet.com.sg|01/Jul/1995:00:50:13 -0400|GET /images/KSC-logosmall.gif HTTP/1.0          |200            |1204              |
+|ts900-418.singnet.com.sg|01/Jul/1995:00:51:05 -0400|GET /cgi-bin/imagemap/countdown?105,179 HTTP/1.0|302            |110               |
++------------------------+--------------------------+------------------------------------------------+---------------+------------------+
+only showing top 5 rows
+
+==================== Task A ====================
+Total requests from Germany: 21148
+Total requests from Canada: 57674
+Total requests from Singapore: 1046
+==================== Task B ====================
+Germany has 1136 unique hosts.
+Canada has 2955 unique hosts.
+Singapore has 78 unique hosts.
+
+Germany Analysis
+----------------------------------------
+Unique Hosts in Germany: 1136
+
+Top 9 Most Active Hosts in Germany:
+                          Host  Count
+host62.ascend.interop.eunet.de    825
+      aibn32.astro.uni-bonn.de    642
+                     ns.scn.de    520
+          www.rrz.uni-koeln.de    421
+         ztivax.zfe.siemens.de    385
+          sun7.lrz-muenchen.de    278
+        relay.ccs.muc.debis.de    269
+      dws.urz.uni-magdeburg.de    241
+   relay.urz.uni-heidelberg.de    232
+
+Canada Analysis
+----------------------------------------
+Unique Hosts in Canada: 2955
+
+Top 9 Most Active Hosts in Canada:
+                      Host  Count
+           ottgate2.bnr.ca   1704
+    freenet.edmonton.ab.ca    770
+          bianca.osc.on.ca    508
+    alize.ere.umontreal.ca    474
+          pcrb.ccrs.emr.ca    454
+srv1.freenet.calgary.ab.ca    346
+             ccn.cs.dal.ca    336
+            oncomdis.on.ca    299
+    cobain.arcs.bcit.bc.ca    277
+
+Singapore Analysis
+----------------------------------------
+Unique Hosts in Singapore: 78
+
+Top 9 Most Active Hosts in Singapore:
+                     Host  Count
+   merlion.singnet.com.sg    304
+           sunsite.nus.sg     40
+ts900-1314.singnet.com.sg     30
+        ssc25.iscs.nus.sg     30
+ts900-1305.singnet.com.sg     25
+         scctn02.sp.ac.sg     25
+ ts900-406.singnet.com.sg     25
+ ts900-402.singnet.com.sg     24
+      einstein.technet.sg     23
+==================== Task C ====================
+==================== Task D ====================
